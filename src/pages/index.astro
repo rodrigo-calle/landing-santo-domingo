@@ -1,11 +1,63 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
+import Banner from "../components/Banner.astro";
 import MainNav from "../components/MainNav.astro";
+import ProductCard from "../components/ProductCard.astro";
+import SeedCard from "../components/SeedCard.astro";
 ---
 
 <Layout title="Vivero Santo Domingo - Oxapampa">
   <MainNav />
-</Layout>
+  <Banner />
+  <section class="w-full h-full bg-slate-200 mx-auto py-6 flex justify-center">
+    <div class="w-5/6">
+      <h1 class="text-secondary-100 text-4xl font-bold my-4">
+        Productos Destacados
+      </h1>
+      <div class="flex justify-between w-full flex-wrap gap-10">
+        <ProductCard
+          productName="Pino Tecunumanii"
+          description="500-1500 msnm"
+          price="0.80"
+          image="/images/plant1.jpg"
+        />
+        <ProductCard
+          productName="Pino Tecunumanii"
+          description="500-1500 msnm"
+          price="0.80"
+          image="/images/plant1.jpg"
+        /><ProductCard
+          productName="Pino Tecunumanii"
+          description="500-1500 msnm"
+          price="0.80"
+          image="/images/plant1.jpg"
+        />
+      </div>
+      <h1 class="text-secondary-100 text-4xl my-12 font-bold">Semillas</h1>
+      <div class="flex flex-row justify-start gap-14 flex-wrap">
+        <SeedCard
+          image="/images/pine_seed_page.jpg"
+          seedName="Pino Tecunumanii"
+        />
+        <SeedCard
+          image="/images/pine_seed_page.jpg"
+          seedName="Pino Tecunumanii"
+        />
+        <SeedCard
+          image="/images/pine_seed_page.jpg"
+          seedName="Pino Tecunumanii"
+        />
+        <SeedCard
+          image="/images/pine_seed_page.jpg"
+          seedName="Pino Tecunumanii"
+        />
+        <SeedCard
+          image="/images/pine_seed_page.jpg"
+          seedName="Pino Tecunumanii"
+        />
+      </div>
+    </div>
+  </section>
 
-<style></style>
+  <style></style>
+</Layout>
