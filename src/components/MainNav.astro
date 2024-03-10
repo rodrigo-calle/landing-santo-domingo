@@ -1,0 +1,28 @@
+---
+import SearchBar from "../components/SearchBar.astro";
+import NavButton from "../components/NavButton.astro";
+import MainMenu from "../components/MainMenu.astro";
+---
+
+<nav
+  class="w-full flex flex-row h-28 bg-primary items-center justify-center md:h-22 md:rounded-b-[45px] absolute z-30"
+>
+  <div class="flex h-full w-5/6 items-center justify-between">
+    <div class="flex justify-start w-5/6 items-center">
+      <a
+        href="/"
+        class="text-white text-2xl font-bold text-left w-1/6 md:text-xl"
+        >Vivero Santo Domingo</a
+      >
+      <div class="w-4/6">
+        <SearchBar />
+      </div>
+    </div>
+    <div class="w-1/6 flex flex-row items-center h-full gap-2">
+      <NavButton />
+      <NavButton />
+      <NavButton />
+    </div>
+  </div>
+</nav>
+<MainMenu />
